@@ -1,0 +1,9 @@
+        name: Disabled Workflow
+        on:
+          workflow_dispatch:  # Только ручной запуск
+        jobs:
+          disabled:
+            runs-on: ubuntu-latest
+            if: false  # Никогда не выполняется
+            steps: []
+        
